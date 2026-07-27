@@ -1,0 +1,22 @@
+public class Card {
+    private String rank;
+    private String suit;
+
+    public Card(String rank, String suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
+
+    public String toString() {
+        return rank + " of " + suit;
+    }
+
+    public boolean equals(Object obj) {
+        Card other = (Card) obj;
+        return rank.equals(other.rank) && suit.equals(other.suit);
+    }
+
+    public int hashCode() {
+        return (rank + suit).hashCode();
+    }
+}
