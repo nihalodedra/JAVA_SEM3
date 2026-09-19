@@ -1,0 +1,1 @@
+This repository contains academic Java practicals and the core implementation of the MiniBank system.
