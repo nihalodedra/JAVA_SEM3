@@ -1,0 +1,14 @@
+# Ignore compiled Java files
+*.class
+*.jar
+
+# Ignore specific build directories
+Minibank/out/
+
+# Ignore temporary Microsoft Office lock files
+~$*.docx
+~$*.xlsx
+
+# Ignore local OS junk
+.DS_Store
+Thumbs.db
