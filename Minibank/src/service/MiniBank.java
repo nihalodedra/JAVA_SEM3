@@ -89,5 +89,15 @@ public class MiniBank {
         } else {
             out.println("Amit withdrawal failed");
         }
+
+        out.println("\nAnnotation Validation:");
+
+        Account testAccount = new SavingsAccount("Test", -5000, 1000);
+
+        String[] errors = AnnotationValidator.validate(testAccount);
+
+        for (String error : errors) {
+            out.println(error);
+        }
     }
 }
